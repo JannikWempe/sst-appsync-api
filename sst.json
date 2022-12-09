@@ -1,0 +1,5 @@
+{
+  "name": "sst-appsync-api",
+  "region": "eu-central-1",
+  "main": "stacks/index.ts"
+}

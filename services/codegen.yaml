@@ -1,0 +1,31 @@
+overwrite: true
+schema:
+  - "./graphql/schema.graphql"
+  - "./graphql/aws.graphql"
+config:
+  scalars:
+    AWSJSON: string
+    AWSDate: string
+    AWSTime: string
+    AWSDateTime: string
+    AWSTimestamp: number
+    AWSEmail: string
+    AWSURL: string
+    AWSPhone: string
+    AWSIPAddress: string
+generates:
+  ./graphql/generated/graphql-types.ts:
+    config:
+      scalars:
+        AWSJSON: string
+        AWSDate: string
+        AWSTime: string
+        AWSDateTime: string
+        AWSTimestamp: number
+        AWSEmail: string
+        AWSURL: string
+        AWSPhone: string
+        AWSIPAddress: string
+        Queue: string
+    plugins:
+      - typescript

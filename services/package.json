@@ -1,0 +1,16 @@
+{
+  "name": "@sst-appsync-api/services",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1272.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.16.1",
+    "@graphql-codegen/typescript": "^2.8.5",
+    "@types/aws-lambda": "^8.10.109"
+  }
+}
