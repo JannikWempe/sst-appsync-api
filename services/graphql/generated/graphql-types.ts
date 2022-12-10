@@ -28,6 +28,10 @@ export type CreatePostInput = {
   title: Scalars['String'];
 };
 
+export type CreateTokenInput = {
+  userId: Scalars['ID'];
+};
+
 export type CreateUserInput = {
   name: Scalars['String'];
   username: Scalars['String'];
@@ -36,12 +40,18 @@ export type CreateUserInput = {
 export type Mutation = {
   __typename?: 'Mutation';
   createPost?: Maybe<Post>;
+  createToken?: Maybe<Scalars['String']>;
   createUser?: Maybe<User>;
 };
 
 
 export type MutationCreatePostArgs = {
   input: CreatePostInput;
+};
+
+
+export type MutationCreateTokenArgs = {
+  input: CreateTokenInput;
 };
 
 

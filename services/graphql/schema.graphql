@@ -25,7 +25,12 @@ input CreatePostInput {
   title: String!
 }
 
+input CreateTokenInput {
+  userId: ID!
+}
+
 type Mutation {
-  createUser(input: CreateUserInput!): User
+  createUser(input: CreateUserInput!): User # @aws_lambda - only has an effect if multiple auth modes specified
   createPost(input: CreatePostInput!): Post
+  createToken(input: CreateTokenInput!): String
 }

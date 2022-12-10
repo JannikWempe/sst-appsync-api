@@ -20,6 +20,7 @@
     "vitest": "^0.25.6"
   },
   "dependencies": {
+    "@aws-cdk/aws-appsync-alpha": "2.50.0-alpha.0",
     "@serverless-stack/node": "^1.18.4",
     "mongodb": "^4.12.1"
   },
